@@ -7,7 +7,7 @@ If you are interested to contribute feel free to send a [pull request](https://g
 
 ## General API Information
 
-- Base endpoint url is: binus-api.vercel.app/api
+- Base endpoint url is: https://binus-api.vercel.app/api
 - All endpoints return either a JSON object or array.
 - available endpoints are:
     - [Schedule](https://github.com/MrMissx/binus_api#schedule): `POST  /api/schedule`.
