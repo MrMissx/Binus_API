@@ -1,7 +1,7 @@
 {
   "name": "binus_api",
   "version": "0.1.0",
-  "description": "Unofficial binus api to fetch schedule data",
+  "description": "Unofficial binus rest api to fetch schedule data",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/MrMissx/binus_api#readme",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
     "express": "^4.17.1",
     "got": "^11.8.2",
     "tough-cookie": "^4.0.0"
