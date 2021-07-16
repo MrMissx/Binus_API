@@ -12,6 +12,7 @@ If you are interested to contribute feel free to send a [pull request](https://g
 - available endpoints are:
     - [Schedule](https://github.com/MrMissx/binus_api#schedule): `POST  /api/schedule`.
     - [Exam](https://github.com/MrMissx/binus_api#exam): `POST  /api/exam`.
+    - [Exam History](https://github.com/MrMissx/binus_api#exam-history): `POST  /api/examHistory`.
 
 
 ## Error
@@ -67,6 +68,39 @@ Response:
   "result": {...}
 }
 ```
+
+## Exam History
+
+Get the history of user exam uploaded answer sheets url.
+
+- URL: `/api/examHistory`
+- Method: `POST`
+
+- Additional parameters
+
+Name  | Type    | Optional | Description
+----- | ------- | ------ | ------
+username| string | No | Binus account username.
+password | string | No | Binus account pasword.
+ExamQuestionID | string | No | ExamQuestionID of the course. Every course has a unique ID. Recieved from `/api/exam`.
+
+
+Response:
+```json
+{
+  "ok": true,
+  "result": [
+    {
+    "Upload": 1,
+    "SubmissionTime": "Friday XX July YY, 00:00:00",
+    "Title": "string",
+    "Url": "string"
+    },
+    {...}
+  ]
+}
+```
+
 
 
 ## Example

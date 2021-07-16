@@ -13,12 +13,7 @@
             "methods": ["GET"]
         },
         {
-            "src": "/api/exam",
-            "dest": "app.js",
-            "methods": ["POST"]
-        },
-        {
-            "src": "/api/schedule",
+            "src": "/api/(.*)",
             "dest": "app.js",
             "methods": ["POST"]
         }
